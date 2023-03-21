@@ -250,6 +250,18 @@ h2 b {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.gg::after {
+    display: block;
+    position: absolute;
+    inset: 50% 28px auto auto;
+    transform: translate(0, -29.5%);
+    content: "";
+    width: 200px;
+    height: 430px;
+    border-radius: 20px;
+    background: rgba(24, 24, 24, 0.5);
+}
+
 .content {
     height: 510px;
     border-radius: 20px;
