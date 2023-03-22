@@ -129,7 +129,7 @@ h2 b {
     background: var(--mc);
     border-radius: 50%;
 
-    animation: boxmove 8s infinite ease-in-out;
+    animation: boxmove 8s infinite ease;
     z-index: -1;
 }
 
@@ -213,7 +213,7 @@ h2 b {
     display: block;
     position: absolute;
     inset: 50% 28px auto auto;
-    transform: translate(0, -125px);
+    transform: translate(0, -127px);
     content: "";
     width: 200px;
     height: 430px;
