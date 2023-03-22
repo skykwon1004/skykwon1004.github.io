@@ -306,6 +306,14 @@ h2 b {
     word-break: keep-all;
 }
 
+.sub01 .text_content .info_desc b {
+    font-weight: 400;
+    /* color: #f40404; */
+    display: inline-block;
+    background: var(--mc);
+    padding: 1px 1px 0 1px;
+}
+
 
 .color_dots {
     display: flex;
@@ -335,12 +343,15 @@ h2 b {
 }
 
 .web_page {
-    padding: 12px 50px;
-    border-radius: 20px;
     font-size: 13px;
     font-weight: 500;
     color: #555;
-    background: #fff;
+}
+
+.web_page>a {
+    padding: 12px 50px;
+    background: #fff; 
+    border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
