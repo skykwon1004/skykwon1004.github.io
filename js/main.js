@@ -77,9 +77,12 @@ $(function () {
         e.stopPropagation();
     });
 
-
-
     // https://github.com/alvarotrigo/pagePiling.js#pagepilingjs 참고
+
+
+    $('.contact').on('click', function () {
+        $('.contact').toggleClass('on')
+    })
 
 
 })
