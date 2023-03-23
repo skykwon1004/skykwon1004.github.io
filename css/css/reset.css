@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Pretendard', 'Roboto', 'Noto Sans KR', sans-serif;
+    /* letter-spacing: -0.025em; */
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    visibility: middle;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
