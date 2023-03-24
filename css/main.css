@@ -308,20 +308,19 @@ h2 b {
 }
 
 .sub01 .text_content .info {
-    min-height: 50px;
+    min-height: 70px;
     /* outline: 1px solid green; */
 }
 
 .sub01 .text_content .info_desc {
-    min-height: 50px;
+    min-height: 70px;
     line-height: 1.4;
     margin: 5px 0;
     word-break: keep-all;
 }
 
 .sub01 .text_content .info_desc b {
-    font-weight: 400;
-    /* color: #f40404; */
+    font-weight: 500;
     display: inline-block;
     background: var(--mc);
     padding: 1px 1px 0 1px;
@@ -400,8 +399,16 @@ h2 b {
     padding: 0 0 0 0;
 }
 
+.react_text_title {
+    min-height: 40px;
+}
 
-
+.react_text {
+    min-height: 40px;
+    line-height: 1.4;
+    margin: 5px 0;
+    word-break: keep-all;
+}
 
 
 
