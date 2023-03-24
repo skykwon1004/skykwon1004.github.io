@@ -15,8 +15,7 @@
 }
 
 ::selection {
-    color: #fff;
-    background: #E52332;
+    background: var(--mc);
 }
 
 .inner {
