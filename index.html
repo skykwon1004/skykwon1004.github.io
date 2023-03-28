@@ -106,10 +106,8 @@
                             <dt>CMS</dt>
                             <dd>Gnuboard</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot01"></span>
-                                <span class="color dot02"></span>
-                                <span class="color dot03"></span>
+                            <dd class="color_dots01 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -156,10 +154,8 @@
                             <dt>CMS</dt>
                             <dd>Gnuboard</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot04"></span>
-                                <span class="color dot05"></span>
-                                <span class="color dot06"></span>
+                            <dd class="color_dots02 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -204,10 +200,8 @@
                             <dt>Tool</dt>
                             <dd>HTML5, CSS3, JavaScript - jQuery, GitHub Pages</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot07"></span>
-                                <span class="color dot08"></span>
-                                <span class="color dot09"></span>
+                            <dd class="color_dots03 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -252,10 +246,8 @@
                             <dt>Tool</dt>
                             <dd>HTML5, CSS3, JavaScript - jQuery, GitHub Pages</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot10"></span>
-                                <span class="color dot11"></span>
-                                <span class="color dot12"></span>
+                            <dd class="color_dots04 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -302,10 +294,8 @@
                             <dd class="react_text">React, react-router-dom, GitHub Pages, react-slick, gsap, HTML5,
                                 CSS3, SCSS, JavaScript</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot13"></span>
-                                <span class="color dot14"></span>
-                                <span class="color dot15"></span>
+                            <dd class="color_dots05 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -351,10 +341,8 @@
                             <dt>Font</dt>
                             <dd>Noto Sans KR</dd>
                             <dt>Color</dt>
-                            <dd class="color_dots">
-                                <span class="color dot16"></span>
-                                <span class="color dot17"></span>
-                                <span class="color dot18"></span>
+                            <dd class="color_dots06 color_dots">
+                            <!-- span 자바스크립트로 넣음 -->
                             </dd>
                             <dt>Work</dt>
                             <dd>개인작업 100%</dd>
@@ -366,7 +354,7 @@
                 </div>
             </div>
         </li>
-        
+
         <li class="section contact_info">
             <div class="sub_end">
                 <div class="contact_info_wrap">
@@ -427,6 +415,49 @@
             <a href="tel:010-2066-2397">010-2066-2397</a>
         </div>
     </div>
+
+
+    <script>
+        const color_list = ['#d1392b', '#999', '#333', '#bf1e2e', '#191919', '#ddd', '#f40000', '#111111', '#d7efe8','#fdac2b','#20c997','#333','#00d0ff','#ff5a2b','#000'];
+    
+        // first for statement => class color_dots를 선택하기 위한 반복문
+        for (let i = 0; i < 6; i++) {
+            // color_dots class를 선택한다.
+            let dd_element = document.querySelector(`.color_dots0${i + 1}`);
+    
+            for (let j = 0; j < 3; j++) {
+                // span 엘리먼트를 생성
+                let span_ele = document.createElement('span');
+    
+                // 이중 for문을 사용하여 자식 span class name을 자동으로 지어준다.
+                let span_index = (i * 3) + (j + 1);
+    
+                span_ele.className = `dots0${span_index}`;
+    
+                span_ele.style.backgroundColor = color_list[span_index - 1];
+                // 생성한 span을 dd 엘리먼트에 삽입한다.
+                dd_element.append(span_ele);
+    
+    
+            }
+    
+        }
+    
+        // console.log(color_list[color_num]);
+    
+        // const color_element = document.querySelector('.color_dots');
+    
+        // for (let i = 0; i < color_list.length; i++) {
+    
+        //     let span = document.createElement('span'); //child = span 엘리먼트를 창조해라
+        //     span.className = `dot0${i + 1}`; //.className = 'dot01'; -> className 주는 법 //${i + 1} 자바스크립트에 변수를 스트링에 넣는법 format string
+    
+        //     span.style.backgroundColor = color_list[i];
+    
+        //     color_element.append(span); //color_element = .color_dots임 append는 자식을 창조해라 -> for문 color_list.length만큼 (3번)
+        // }
+    </script>
+
 
 
 </body>
