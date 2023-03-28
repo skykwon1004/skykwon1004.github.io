@@ -364,11 +364,11 @@ h2 b {
     padding: 5px;
 }
 
-/* .dot01 {
+.dot01 {
     background: #d1392b;
-} */
+}
 
-/* .dot02 {
+.dot02 {
     background: #999;
 }
 
@@ -386,7 +386,7 @@ h2 b {
 
 .dot06 {
     background: #ddd;
-} */
+}
 
 
 
@@ -640,7 +640,7 @@ h2 b {
     align-items: center;
     text-align: left;
     background: #f9f9f9;
-    gap: 100px;
+    /* gap: 100px; */
 }
 
 .contact_img {
@@ -649,6 +649,10 @@ h2 b {
 
 .contact_info_text {
     flex: 1.5;
+}
+
+.contact_me img {
+    width: 80%;
 }
 
 .contact_me {
@@ -717,7 +721,7 @@ h2 b {
 .con_name::after {
     content: "";
     position: absolute;
-    inset: auto 50px -140px auto;
+    inset: auto 50px -80px auto;
     width: 100px;
     height: 100px;
     border-radius: 50%;
