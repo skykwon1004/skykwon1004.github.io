@@ -345,7 +345,7 @@ h2 b {
     font-weight: 500;
     display: inline-block;
     background: var(--mc);
-    padding: 1px 1px 0 1px;
+    padding: 0 1px 0 1px;
 }
 
 
@@ -618,7 +618,6 @@ h2 b {
     align-items: center;
     text-align: left;
     background: #f9f9f9;
-    /* gap: 100px; */
 }
 
 .contact_img {
