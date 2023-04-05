@@ -129,20 +129,18 @@ h2 b {
 }
 
 /* box */
-.box {
+/* .box {
     position: absolute;
     inset: -5px auto auto 0;
     width: 45px;
     height: 45px;
     background: var(--mc);
     border-radius: 50%;
-
     animation: boxmove 8s infinite ease;
     z-index: -1;
-}
+} */
 
-
-@keyframes boxmove {
+/* @keyframes boxmove {
     0% {
         opacity: 0;
         transform: translate(-160px, -50px) scale(0.2);
@@ -161,6 +159,36 @@ h2 b {
     100% {
         opacity: 0;
         transform: translate(600px, -50px) scale(0.2);
+    }
+} */
+
+.box {
+    position: absolute;
+    inset: -10px -10px auto auto;
+    width: 40px;
+    height: 40px;
+    background: var(--mc);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    inset: -20px -20px auto auto;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    background: var(--mc);
+    border-radius: 50%;
+    opacity: .5;
+    animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes scale-up {
+    100% {
+        opacity: 0.2;
+        transform: translate(0, 0) scale(0.3);
     }
 }
 
