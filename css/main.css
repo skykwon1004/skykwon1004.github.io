@@ -457,6 +457,11 @@ h2 b {
     border-radius: 50%;
 }
 
+.btn {
+    display: flex;
+    gap: 30px;
+}
+
 .web_page {
     font-size: 13px;
     font-weight: 500;
